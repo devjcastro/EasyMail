@@ -123,6 +123,13 @@ new EasyMail().create(this, new EMGmail())
 ```
 
 
+**To send attachments we can do with the following methods**
+* addAttachment(filePath)
+* addAttachments(attachments)
+
+as a parameter send the path or file paths.
+<br><br>
+
 To use the html template you must create an object type HashMap <String, String> where the key is the name of the variable in the html content.
 
 you must set `setUseHtmlFormat` as  true and pass as parameter the hashmap in the method `setHtmlValue(hashMap)`. additionally must specify the name of the html file in the method `setHtmlFilePath('template.html')`, this should be in the folder asset
