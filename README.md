@@ -128,6 +128,10 @@ new EasyMail().create(this, new EMGmail())
 * addAttachments(attachments)
 
 as a parameter send the path or file paths.
+
+Result Mail with Attached
+![alt image attachments](http://image.prntscr.com/image/aca69fd01f13415090dc78cb85ea2063.png "Mail Attachments")
+
 <br><br>
 
 To use the html template you must create an object type HashMap <String, String> where the key is the name of the variable in the html content.
