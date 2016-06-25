@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/EasyMail-mater.iml" filepath="$PROJECT_DIR$/EasyMail-mater.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/easymail/easymail.iml" filepath="$PROJECT_DIR$/easymail/easymail.iml" />
+    </modules>
+  </component>
+</project>
