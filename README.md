@@ -8,7 +8,7 @@ EasyMail is a library to send mail. You can send mail using a template html.
 * Gmail Server Support
 * Outlook Server Support
 * Html Template Support
-
+* <span style="color:#00FF00;">Support for Attachments</span>
 
 ##Installation
 **Add it in your root build.gradle at the end of repositories:**
