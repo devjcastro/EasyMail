@@ -91,7 +91,7 @@ htmlValue.put("{{title}}", "This is the title of mail");
 htmlValue.put("{{messageTop}}", "This is a small title of mail");
 htmlValue.put("{{content}}", "This is the content of mail");
 
-new EasyMail().create(this, new EMOutlook())
+new EasyMail().create(this, new EMGmail())
         .defaultConfiguration()
         .showProgress(true)
         .setProgressData("Sending", "Sending message, please wait...")
@@ -101,6 +101,7 @@ new EasyMail().create(this, new EMOutlook())
         .addSubject("This is a mail with html format")
         .setUseHtmlFormat(true)
         .setHtmlValue(htmlValue)
+        .addAttachments(attachments)
         .setOnSuccess(new EasyMail.OnSuccess() {
             @Override
             public void onSuccess() {
