@@ -12,7 +12,8 @@ EasyMail is a library to send mail. You can send mail using a template html.
 
 ##Installation
 
-**Gradle**
+####Gradle
+
 Add it in your root build.gradle at the end of repositories:
 ```
 allprojects {
@@ -32,7 +33,7 @@ dependencies {
 }
 ```
 
-**Maven**
+####Maven
 ```
 <repositories>
 	<repository>
