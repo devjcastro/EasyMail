@@ -11,7 +11,9 @@ EasyMail is a library to send mail. You can send mail using a template html.
 * <b>Support for Attachments</b>
 
 ##Installation
-**Add it in your root build.gradle at the end of repositories:**
+
+**Gradle**
+Add it in your root build.gradle at the end of repositories:
 ```
 allprojects {
 	repositories {
@@ -23,13 +25,31 @@ allprojects {
 
 
 
-**Add the dependency in the build.gradle**
+Add the dependency in the build.gradle**
 ```
 dependencies {
     compile 'com.github.ingyork:EasyMail:1.0'
 }
 ```
 
+**Maven**
+```
+<repositories>
+	<repository>
+	    <id>jitpack.io</id>
+	    <url>https://jitpack.io</url>
+	</repository>
+</repositories>
+```
+
+Add the dependency
+```
+<dependency>
+    <groupId>com.github.ingyork</groupId>
+    <artifactId>EasyMail</artifactId>
+    <version>1.0</version>
+</dependency>
+```
 
 ##Usage
 
