@@ -54,17 +54,17 @@ Add the dependency
 
 ##Usage
 
-We can set EasyMail to work with servers Gmail or Outlook
-* EasyMail.EASYMAIL_GMAIL
-* EasyMail.EASYMAIL_OUTLOOK
+We can set EasyMail to work with servers Gmail or Outlook passing as parameter an instance of EMGmail class or EMOutlook class
+* new EMGmail()
+* new EMOutlook()
 
 
 Simple Setup
 ```
-new EasyMail().create(this, new EMGmail())
+new EasyMail().create(context, new EMGmail())
         .defaultConfiguration()
         .addCredentials(MailKey.EMAIL, MailKey.PASSWORD)
-        .addMailTo(mail1)
+        .addMailTo("email_1@gmail.com")
         .addSubject("Message Subject")
         .addBody("This is a Message Body")
 ```
@@ -73,12 +73,12 @@ new EasyMail().create(this, new EMGmail())
 
 Other configurations
 ```
-new EasyMail().create(this, new EMGmail())
+new EasyMail().create(context, new EMGmail())
         .defaultConfiguration()
         .showProgress(true)
         .setProgressData("Sending", "Sending message, please wait...")
         .addCredentials(MailKey.EMAIL, MailKey.PASSWORD)
-        .addMailTo(mail1+','+mail2)
+        .addMailTo("email_1@gmail.com,email_2@outlook.com")
         .addSubject("This is a Mail with multiple recipients")
         .addBody("This is a Message Body")
         .setOnSuccess(new EasyMail.OnSuccess() {
@@ -112,12 +112,12 @@ htmlValue.put("{{title}}", "This is the title of mail");
 htmlValue.put("{{messageTop}}", "This is a small title of mail");
 htmlValue.put("{{content}}", "This is the content of mail");
 
-new EasyMail().create(this, new EMGmail())
+new EasyMail().create(context, new EMGmail())
         .defaultConfiguration()
         .showProgress(true)
         .setProgressData("Sending", "Sending message, please wait...")
         .addCredentials(MailKey.EMAIL, MailKey.PASSWORD)
-        .addMailTo(mail1+','+mail2)
+        .addMailTo("email_1@gmail.com,email_2@outlook.com")
         .setHtmlFilePath("test.html")
         .addSubject("This is a mail with html format")
         .setUseHtmlFormat(true)
