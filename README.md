@@ -4,15 +4,15 @@ EasyMail is a library to send mail. You can send mail using a template html.
 
 **The current stable release is 1.0**
 
-##Features
+## Features
 * Gmail Server Support
 * Outlook Server Support
 * Html Template Support
 * <b>Support for Attachments</b>
 
-##Installation
+## Installation
 
-####Gradle
+#### Gradle
 
 Add it in your root build.gradle at the end of repositories:
 ```
@@ -33,7 +33,7 @@ dependencies {
 }
 ```
 
-####Maven
+#### Maven
 ```
 <repositories>
 	<repository>
@@ -52,7 +52,7 @@ Add the dependency
 </dependency>
 ```
 
-##Usage
+## Usage
 
 We can set EasyMail to work with servers Gmail or Outlook passing as parameter an instance of EMGmail class or EMOutlook class
 * new EMGmail()
