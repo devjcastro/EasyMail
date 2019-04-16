@@ -29,7 +29,7 @@ allprojects {
 Add the dependency in the build.gradle**
 ```
 dependencies {
-    compile 'com.github.ingyork:EasyMail:1.0'
+    implementation 'com.github.devjcastro:EasyMail:1.0'
 }
 ```
 
@@ -46,7 +46,7 @@ dependencies {
 Add the dependency
 ```
 <dependency>
-    <groupId>com.github.ingyork</groupId>
+    <groupId>com.github.devjcastro</groupId>
     <artifactId>EasyMail</artifactId>
     <version>1.0</version>
 </dependency>
